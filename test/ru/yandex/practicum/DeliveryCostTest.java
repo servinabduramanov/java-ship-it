@@ -43,7 +43,7 @@ public class DeliveryCostTest {
 
     private static <T extends Parcel> int calculateSum(ArrayList<T> parcels) {
         int sum = 0;
-        for (Parcel parcel : parcels) {
+        for (T parcel : parcels) {
             sum += parcel.calculateDeliveryCost();
         }
         return sum;
